@@ -1,0 +1,21 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="tour_comm_lang" directorySegmentName="seg_0" id="39A21F7A-C8BD-28C0-ACAB-C06E2FF8122E">
+<createdBy>Predator</createdBy>
+<createdTime>2022-04-25 07:31:15 UTC</createdTime>
+<ownerDesignName>1B_logical_model</ownerDesignName>
+<engineerTo>
+<item key="E06BFC77-926B-847A-7389-12C60EDE8C51" value="true"/>
+</engineerTo>
+<targetPk>3DAA3CF0-C68D-58E3-C706-A79B7D8EE2EE</targetPk>
+<identifying>true</identifying>
+<nameOnSource>contains</nameOnSource>
+<nameOnTarget> </nameOnTarget>
+<optionalSource>false</optionalSource>
+<optionalTarget>true</optionalTarget>
+<sourceCardinality>*</sourceCardinality>
+<sourceEntity>F50B9149-ECE9-A6DE-114E-CAEA2DC65F91</sourceEntity>
+<targetCardinalityString>1</targetCardinalityString>
+<targetEntity>82377213-AF7C-EF4F-3780-8C3E6B4DFACD</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

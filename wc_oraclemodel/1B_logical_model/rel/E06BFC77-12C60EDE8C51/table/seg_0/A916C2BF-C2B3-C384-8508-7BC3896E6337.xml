@@ -1,0 +1,52 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="A916C2BF-C2B3-C384-8508-7BC3896E6337" name="COUNTRY">
+<createdBy>User</createdBy>
+<createdTime>2022-04-27 16:17:24 UTC</createdTime>
+<generatorID>E625E8D2-1C89-2220-E3AB-0B0DFC222513</generatorID>
+<ownerDesignName>1B_logical_model</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="country_code" id="D9C9566B-A19E-0D50-B337-32894C0ADBFF">
+<createdBy>User</createdBy>
+<createdTime>2022-04-27 16:17:24 UTC</createdTime>
+<commentInRDBMS><![CDATA[Country code in ISO 3166-1 Alpha-2]]></commentInRDBMS>
+<generatorID>2A833DBC-20B8-4891-55F7-0B5FCDA16946</generatorID>
+<ownerDesignName>1B_logical_model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>2 CHAR</dataTypeSize>
+<ownDataTypeParameters>2 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="country_name" id="12F266BD-1F88-1238-39C3-14103863D736">
+<createdBy>User</createdBy>
+<createdTime>2022-04-27 16:17:24 UTC</createdTime>
+<commentInRDBMS><![CDATA[Country name]]></commentInRDBMS>
+<generatorID>C9A3F4E5-4549-3F0B-3271-C9B565AE4C45</generatorID>
+<ownerDesignName>1B_logical_model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30 CHAR</dataTypeSize>
+<ownDataTypeParameters>30 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="F2562B31-3991-67D9-6A80-9AB18D63694C" name="COUNTRY_PK">
+<createdBy>User</createdBy>
+<createdTime>2022-04-27 16:17:24 UTC</createdTime>
+<generatorID>F3B3D6FB-E775-837F-E18E-4E2BFF42D6F0</generatorID>
+<ownerDesignName>1B_logical_model</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D9C9566B-A19E-0D50-B337-32894C0ADBFF"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

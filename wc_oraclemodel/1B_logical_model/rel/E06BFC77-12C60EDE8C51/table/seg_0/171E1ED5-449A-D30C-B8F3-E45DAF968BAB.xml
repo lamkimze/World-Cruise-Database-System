@@ -1,0 +1,52 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="171E1ED5-449A-D30C-B8F3-E45DAF968BAB" name="TOUR_AVAILABILITY">
+<createdBy>User</createdBy>
+<createdTime>2022-04-27 16:17:24 UTC</createdTime>
+<generatorID>48A1E87D-EF3B-ACC6-FC6E-9DE7E5731621</generatorID>
+<ownerDesignName>1B_logical_model</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="tour_avail_id" id="B3A2E562-0E9B-282A-21CB-D146088995A1">
+<createdBy>User</createdBy>
+<createdTime>2022-04-27 16:17:24 UTC</createdTime>
+<commentInRDBMS><![CDATA[Tour availability id represents the intervals of tour runs which allows for many combinations]]></commentInRDBMS>
+<generatorID>982D680A-0808-FC38-1F40-ECF2E76FA4F5</generatorID>
+<ownerDesignName>1B_logical_model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,3,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="tour_avail_days" id="3A7BBE8E-4993-6897-D983-F3CA0ECE58CC">
+<createdBy>User</createdBy>
+<createdTime>2022-04-27 16:17:24 UTC</createdTime>
+<commentInRDBMS><![CDATA[The days which the tour runs]]></commentInRDBMS>
+<generatorID>597F8870-8057-72AB-3D36-19ABB09D1661</generatorID>
+<ownerDesignName>1B_logical_model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="308EDC2D-4311-86D8-70D8-5A213A5C6CB4" name="TOUR_AVAILABILITY_PK">
+<createdBy>User</createdBy>
+<createdTime>2022-04-27 16:17:24 UTC</createdTime>
+<generatorID>F16E1616-362E-BA3B-BE00-38245BD0AEF1</generatorID>
+<ownerDesignName>1B_logical_model</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B3A2E562-0E9B-282A-21CB-D146088995A1"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,101 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="FCA9CF5C-B08F-5690-5C34-A23BE5BCACEB" name="TOUR_PART">
+<createdBy>User</createdBy>
+<createdTime>2022-04-27 16:17:24 UTC</createdTime>
+<generatorID>77ED3F75-A87F-A7D2-85FB-C69BE85163BC</generatorID>
+<ownerDesignName>1B_logical_model</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="tour_off_id" id="5EBD6E8B-105C-9CC9-3EAB-9EB6C87565B6">
+<createdBy>User</createdBy>
+<createdTime>2022-04-27 16:17:24 UTC</createdTime>
+<commentInRDBMS><![CDATA[The ID for an offering of a tour]]></commentInRDBMS>
+<generatorID>1E1E71D8-D9D7-862A-2D53-C70F9D01AE69</generatorID>
+<ownerDesignName>1B_logical_model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="3B81EDBB-6185-39C6-E4BD-C271BEA9511A" referredColumn="25FABDF6-C400-EEBD-0220-F2FE8899290B"/>
+</associations>
+</Column>
+<Column name="pass_id" id="D89BFD91-A1E9-56A4-EAAB-B876E2F4C2C0">
+<createdBy>User</createdBy>
+<createdTime>2022-04-27 16:17:24 UTC</createdTime>
+<commentInRDBMS><![CDATA[Passenger ID]]></commentInRDBMS>
+<generatorID>79657C57-7265-1719-92F1-679B13A0D102</generatorID>
+<ownerDesignName>1B_logical_model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>8</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="CA62588F-63A6-9D1E-CBCD-4FAD23C73DEB" referredColumn="FF4AC198-A92C-A95E-2579-D85DA2D8B1AE"/>
+</associations>
+</Column>
+<Column name="tour_part_pay_received" id="4C72E78A-8154-4342-84F3-E38BC92D8411">
+<createdBy>User</createdBy>
+<createdTime>2022-04-27 16:17:24 UTC</createdTime>
+<commentInRDBMS><![CDATA[Payment received boolean]]></commentInRDBMS>
+<generatorID>334ED8EE-B4B5-4660-8CEE-437B0DC8EBF3</generatorID>
+<ownerDesignName>1B_logical_model</ownerDesignName>
+<constraintName>chk_payment</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>1 CHAR</dataTypeSize>
+<listOfValues>
+<valueDef value="F" description="False (yet to be received)"/>
+<valueDef value="T" description="True (received)"/>
+</listOfValues>
+<ownDataTypeParameters>1 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="FE8679CB-45D9-40D8-D1D2-BC139DA6C002" name="TOUR_PART_PK">
+<createdBy>User</createdBy>
+<createdTime>2022-04-27 16:17:24 UTC</createdTime>
+<generatorID>F8258F94-E459-F8C0-E4BD-5887D38C21AB</generatorID>
+<ownerDesignName>1B_logical_model</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D89BFD91-A1E9-56A4-EAAB-B876E2F4C2C0"/>
+<colUsage columnID="5EBD6E8B-105C-9CC9-3EAB-9EB6C87565B6"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="5928A98C-AFA3-B94E-FF21-7423223E9246" name="passenger_tour_part_det">
+<createdBy>User</createdBy>
+<createdTime>2022-04-27 16:17:24 UTC</createdTime>
+<generatorID>129E0EFD-FE42-E578-300F-F4CADA1FCE9C</generatorID>
+<ownerDesignName>1B_logical_model</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D89BFD91-A1E9-56A4-EAAB-B876E2F4C2C0"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="044F4EF5-9E65-C9BE-0971-DD1E37DCD17E" name="tour_off_part_det">
+<createdBy>User</createdBy>
+<createdTime>2022-04-27 16:17:24 UTC</createdTime>
+<generatorID>E9E69598-F6C2-6F6B-0F64-B998E2D9FEBC</generatorID>
+<ownerDesignName>1B_logical_model</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="5EBD6E8B-105C-9CC9-3EAB-9EB6C87565B6"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,62 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="48A1E87D-EF3B-ACC6-FC6E-9DE7E5731621" name="TOUR_AVAILABILITY">
+<createdBy>Predator</createdBy>
+<createdTime>2022-04-25 07:47:11 UTC</createdTime>
+<ownerDesignName>1B_logical_model</ownerDesignName>
+<engineerTo>
+<item key="E06BFC77-926B-847A-7389-12C60EDE8C51" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="tour_avail_id" id="982D680A-0808-FC38-1F40-ECF2E76FA4F5">
+<createdBy>Predator</createdBy>
+<createdTime>2022-04-26 12:18:08 UTC</createdTime>
+<commentInRDBMS><![CDATA[Tour availability id represents the intervals of tour runs which allows for many combinations]]></commentInRDBMS>
+<ownerDesignName>1B_logical_model</ownerDesignName>
+<engineerTo>
+<item key="E06BFC77-926B-847A-7389-12C60EDE8C51" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,3,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="tour_avail_days" id="597F8870-8057-72AB-3D36-19ABB09D1661">
+<createdBy>Predator</createdBy>
+<createdTime>2022-04-26 12:27:08 UTC</createdTime>
+<commentInRDBMS><![CDATA[The days which the tour runs]]></commentInRDBMS>
+<ownerDesignName>1B_logical_model</ownerDesignName>
+<engineerTo>
+<item key="E06BFC77-926B-847A-7389-12C60EDE8C51" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="F16E1616-362E-BA3B-BE00-38245BD0AEF1" name="TOUR_AVAILABILITY PK">
+<createdBy>Predator</createdBy>
+<createdTime>2022-04-26 12:19:24 UTC</createdTime>
+<ownerDesignName>1B_logical_model</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="E06BFC77-926B-847A-7389-12C60EDE8C51" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>982D680A-0808-FC38-1F40-ECF2E76FA4F5</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

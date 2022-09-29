@@ -1,0 +1,198 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="82377213-AF7C-EF4F-3780-8C3E6B4DFACD" name="TOUR">
+<createdBy>User</createdBy>
+<createdTime>2022-04-22 10:22:35 UTC</createdTime>
+<ownerDesignName>1B_logical_model</ownerDesignName>
+<engineerTo>
+<item key="E06BFC77-926B-847A-7389-12C60EDE8C51" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="port_code" id="27D4C19E-2223-2940-5185-C1A267D83AF7">
+<createdBy>User</createdBy>
+<createdTime>2022-04-22 10:23:01 UTC</createdTime>
+<commentInRDBMS><![CDATA[Port code]]></commentInRDBMS>
+<generatorID>80164E04-6161-7D56-9E66-D89B4D167696</generatorID>
+<ownerDesignName>1B_logical_model</ownerDesignName>
+<engineerTo>
+<item key="E06BFC77-926B-847A-7389-12C60EDE8C51" value="true"/>
+</engineerTo>
+<referedAttribute>DA68FE6F-AD72-87B4-662D-5420E3BAEA50</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>5 CHAR</dataTypeSize>
+<ownDataTypeParameters>5 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="tour_no" id="8A2FC029-B192-CEEE-476D-C4EAAA6930E9">
+<createdBy>User</createdBy>
+<createdTime>2022-04-22 10:36:42 UTC</createdTime>
+<commentInRDBMS><![CDATA[Tour number]]></commentInRDBMS>
+<ownerDesignName>1B_logical_model</ownerDesignName>
+<engineerTo>
+<item key="E06BFC77-926B-847A-7389-12C60EDE8C51" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>2 CHAR</dataTypeSize>
+<ownDataTypeParameters>2 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="tour_name" id="C9111381-6AD5-04D2-A585-477E9770F184">
+<createdBy>User</createdBy>
+<createdTime>2022-04-22 10:37:15 UTC</createdTime>
+<commentInRDBMS><![CDATA[Tour name]]></commentInRDBMS>
+<ownerDesignName>1B_logical_model</ownerDesignName>
+<engineerTo>
+<item key="E06BFC77-926B-847A-7389-12C60EDE8C51" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50 CHAR</dataTypeSize>
+<ownDataTypeParameters>50 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="tour_desc" id="44FAF13D-28A1-35B7-C5CE-4B0546202979">
+<createdBy>User</createdBy>
+<createdTime>2022-04-22 10:37:30 UTC</createdTime>
+<commentInRDBMS><![CDATA[Tour description]]></commentInRDBMS>
+<ownerDesignName>1B_logical_model</ownerDesignName>
+<engineerTo>
+<item key="E06BFC77-926B-847A-7389-12C60EDE8C51" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100 CHAR</dataTypeSize>
+<ownDataTypeParameters>100 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="tour_hour_req" id="18A74B12-3B8B-0AB4-0C6B-089B0890298E">
+<createdBy>User</createdBy>
+<createdTime>2022-04-22 10:37:30 UTC</createdTime>
+<commentInRDBMS><![CDATA[Hours required for the tour]]></commentInRDBMS>
+<ownerDesignName>1B_logical_model</ownerDesignName>
+<engineerTo>
+<item key="E06BFC77-926B-847A-7389-12C60EDE8C51" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,4,2</ownDataTypeParameters>
+</Attribute>
+<Attribute name="tour_cost_person" id="8BFA260C-7F76-34EE-E35D-859E910710E1">
+<createdBy>User</createdBy>
+<createdTime>2022-04-22 10:37:30 UTC</createdTime>
+<commentInRDBMS><![CDATA[Tour cost per person]]></commentInRDBMS>
+<ownerDesignName>1B_logical_model</ownerDesignName>
+<engineerTo>
+<item key="E06BFC77-926B-847A-7389-12C60EDE8C51" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>6</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,6,2</ownDataTypeParameters>
+</Attribute>
+<Attribute name="tour_wheelchair_access" id="A06DEAC4-91FB-DC89-5255-A585FE2C96E0">
+<createdBy>User</createdBy>
+<createdTime>2022-04-22 10:37:47 UTC</createdTime>
+<commentInRDBMS><![CDATA[Wheelchair access (Y/N)]]></commentInRDBMS>
+<ownerDesignName>1B_logical_model</ownerDesignName>
+<engineerTo>
+<item key="E06BFC77-926B-847A-7389-12C60EDE8C51" value="true"/>
+</engineerTo>
+<constraintName>chk_wheelchair</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<listOfValues>
+<valueDef value="N" description="No wheelchair access"/>
+<valueDef value="Y" description="Yes wheelchair access"/>
+</listOfValues>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="tour_start_time" id="EBE2E6D0-0A39-CEFD-D946-9191DFDC7689">
+<createdBy>User</createdBy>
+<createdTime>2022-04-22 10:59:52 UTC</createdTime>
+<commentInRDBMS><![CDATA[Start time]]></commentInRDBMS>
+<ownerDesignName>1B_logical_model</ownerDesignName>
+<engineerTo>
+<item key="E06BFC77-926B-847A-7389-12C60EDE8C51" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="tour_min_part" id="75B3865A-89DF-FA61-CBB9-B48D047A6B6F">
+<createdBy>User</createdBy>
+<createdTime>2022-04-27 11:04:09 UTC</createdTime>
+<commentInRDBMS><![CDATA[Minimum number of participants required for the tour to run]]></commentInRDBMS>
+<ownerDesignName>1B_logical_model</ownerDesignName>
+<engineerTo>
+<item key="E06BFC77-926B-847A-7389-12C60EDE8C51" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,3,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="tour_avail_id" id="28265C65-A99E-A489-A9D7-325AC1641276">
+<createdBy>Predator</createdBy>
+<createdTime>2022-04-26 12:24:44 UTC</createdTime>
+<commentInRDBMS><![CDATA[Tour availability id represents the intervals of tour runs which allows for many combinations]]></commentInRDBMS>
+<generatorID>C87A8517-AC3F-672B-A9E3-863B4DEBA589</generatorID>
+<ownerDesignName>1B_logical_model</ownerDesignName>
+<engineerTo>
+<item key="E06BFC77-926B-847A-7389-12C60EDE8C51" value="true"/>
+</engineerTo>
+<referedAttribute>982D680A-0808-FC38-1F40-ECF2E76FA4F5</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,3,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="3DAA3CF0-C68D-58E3-C706-A79B7D8EE2EE" name="TOUR PK">
+<createdBy>User</createdBy>
+<createdTime>2022-04-22 10:23:01 UTC</createdTime>
+<ownerDesignName>1B_logical_model</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="E06BFC77-926B-847A-7389-12C60EDE8C51" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>27D4C19E-2223-2940-5185-C1A267D83AF7</attributeRef>
+<attributeRef>8A2FC029-B192-CEEE-476D-C4EAAA6930E9</attributeRef>
+</usedAttributes>
+</identifier>
+<identifier id="81D8696D-48E5-8A31-E080-BB69884EDDCA" name="TOUR_UNIQUE">
+<createdBy>Predator</createdBy>
+<createdTime>2022-04-24 11:57:44 UTC</createdTime>
+<ownerDesignName>1B_logical_model</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="E06BFC77-926B-847A-7389-12C60EDE8C51" value="false"/>
+</engineerTo>
+<newElementsIDs>8A2FC029-B192-CEEE-476D-C4EAAA6930E9</newElementsIDs>
+<usedAttributes>
+<attributeRef>8A2FC029-B192-CEEE-476D-C4EAAA6930E9</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

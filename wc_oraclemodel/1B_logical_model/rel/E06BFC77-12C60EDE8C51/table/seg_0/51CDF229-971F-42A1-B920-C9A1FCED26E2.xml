@@ -1,0 +1,106 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="51CDF229-971F-42A1-B920-C9A1FCED26E2" name="VISIT">
+<createdBy>User</createdBy>
+<createdTime>2022-04-27 16:17:24 UTC</createdTime>
+<generatorID>74B1B881-5ECE-9DF4-C74D-383045D2FD02</generatorID>
+<ownerDesignName>1B_logical_model</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="cruise_id" id="60D23BE7-BE8D-72BC-1BF1-B6C5C4ED1AD0">
+<createdBy>User</createdBy>
+<createdTime>2022-04-27 16:17:24 UTC</createdTime>
+<commentInRDBMS><![CDATA[ID of the cruise]]></commentInRDBMS>
+<generatorID>896438E2-D93C-4161-8BB1-D87C3087E209</generatorID>
+<ownerDesignName>1B_logical_model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="B3F88620-9798-8369-BDB9-03379F6A205A" referredColumn="78F1D538-9A9D-CC2F-A29B-5614E4946939"/>
+</associations>
+</Column>
+<Column name="visit_date" id="F3B77603-E7A4-3AE1-AB18-2B51A66677A4">
+<createdBy>User</createdBy>
+<createdTime>2022-04-27 16:17:24 UTC</createdTime>
+<commentInRDBMS><![CDATA[Date the cruise made a visit]]></commentInRDBMS>
+<generatorID>ADC292B4-18EB-BA6B-5961-E775DEED2F6F</generatorID>
+<ownerDesignName>1B_logical_model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="visit_time" id="5257EA3B-3024-7275-5234-585588724907">
+<createdBy>User</createdBy>
+<createdTime>2022-04-27 16:17:24 UTC</createdTime>
+<commentInRDBMS><![CDATA[Time the cruise made a visit]]></commentInRDBMS>
+<generatorID>0C1AA967-A31A-581B-D0D9-CAD47DE7B981</generatorID>
+<ownerDesignName>1B_logical_model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="port_code" id="DD74FE9D-AE36-D661-7CA9-264E0AED993C">
+<createdBy>User</createdBy>
+<createdTime>2022-04-27 16:17:24 UTC</createdTime>
+<commentInRDBMS><![CDATA[Port code]]></commentInRDBMS>
+<generatorID>4175963F-ADF6-B245-8357-7F75B7FEC16B</generatorID>
+<ownerDesignName>1B_logical_model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>5 CHAR</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="5D3A909D-D231-04E3-4AFC-212BE4318F3E" referredColumn="FF0A6CF8-CD3C-4117-25A5-A668AD2C63AB"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="F3D0A029-E9D4-C92D-8869-72FE20C94B42" name="VISIT_PK">
+<createdBy>User</createdBy>
+<createdTime>2022-04-27 16:17:24 UTC</createdTime>
+<generatorID>A4B009F9-9781-B424-B7FE-453016EACACF</generatorID>
+<ownerDesignName>1B_logical_model</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="60D23BE7-BE8D-72BC-1BF1-B6C5C4ED1AD0"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="89CB6F6F-CF3C-1163-0B34-688E0E4CA1C5" name="cruise_visit">
+<createdBy>User</createdBy>
+<createdTime>2022-04-27 16:17:24 UTC</createdTime>
+<generatorID>2C98657B-ACC1-0FFD-9A5A-93C0E1D9BDE8</generatorID>
+<ownerDesignName>1B_logical_model</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="60D23BE7-BE8D-72BC-1BF1-B6C5C4ED1AD0"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="3A39F89C-0F1D-2C14-B5C6-4054CA16C4B2" name="port_tour_visit">
+<createdBy>User</createdBy>
+<createdTime>2022-04-27 16:17:24 UTC</createdTime>
+<generatorID>CF073F74-D0FE-C7A1-506A-8C3A5EE2E8C4</generatorID>
+<ownerDesignName>1B_logical_model</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="DD74FE9D-AE36-D661-7CA9-264E0AED993C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

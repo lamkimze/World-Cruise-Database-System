@@ -1,0 +1,21 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="comm_lang_language" directorySegmentName="seg_0" id="9B5C98D1-72F6-D995-66BE-FDCC99DCE430">
+<createdBy>Predator</createdBy>
+<createdTime>2022-04-25 07:40:00 UTC</createdTime>
+<ownerDesignName>1B_logical_model</ownerDesignName>
+<engineerTo>
+<item key="E06BFC77-926B-847A-7389-12C60EDE8C51" value="true"/>
+</engineerTo>
+<sourcePk>7F6DDE30-DF49-4990-54CB-36EF64E34B3D</sourcePk>
+<identifying>true</identifying>
+<nameOnSource>includes</nameOnSource>
+<nameOnTarget> </nameOnTarget>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>D38D299C-68BD-F2F4-0B47-952EE6F586CF</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>F50B9149-ECE9-A6DE-114E-CAEA2DC65F91</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

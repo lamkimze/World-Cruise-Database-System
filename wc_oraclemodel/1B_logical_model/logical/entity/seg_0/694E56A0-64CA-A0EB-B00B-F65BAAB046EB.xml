@@ -1,0 +1,107 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="694E56A0-64CA-A0EB-B00B-F65BAAB046EB" name="PORT_TEMP">
+<createdBy>User</createdBy>
+<createdTime>2022-04-22 10:20:14 UTC</createdTime>
+<ownerDesignName>1B_logical_model</ownerDesignName>
+<engineerTo>
+<item key="E06BFC77-926B-847A-7389-12C60EDE8C51" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="port_code" id="B586C049-D16F-4E4B-9198-4479B43034A4">
+<createdBy>User</createdBy>
+<createdTime>2022-04-22 10:20:51 UTC</createdTime>
+<commentInRDBMS><![CDATA[Port code]]></commentInRDBMS>
+<generatorID>8671C968-7B74-7159-3880-2E840081480C</generatorID>
+<ownerDesignName>1B_logical_model</ownerDesignName>
+<engineerTo>
+<item key="E06BFC77-926B-847A-7389-12C60EDE8C51" value="true"/>
+</engineerTo>
+<referedAttribute>DA68FE6F-AD72-87B4-662D-5420E3BAEA50</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>5 CHAR</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="pt_month" id="CD0C95B9-2837-EC77-5386-6E66EC560099">
+<createdBy>User</createdBy>
+<createdTime>2022-04-22 11:00:48 UTC</createdTime>
+<commentInRDBMS><![CDATA[Port month]]></commentInRDBMS>
+<ownerDesignName>1B_logical_model</ownerDesignName>
+<engineerTo>
+<item key="E06BFC77-926B-847A-7389-12C60EDE8C51" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>3 CHAR</dataTypeSize>
+<listOfValues>
+<valueDef value="Apr" description="April"/>
+<valueDef value="Aug" description="August"/>
+<valueDef value="Dec" description="December"/>
+<valueDef value="Feb" description="February"/>
+<valueDef value="Jan" description="January"/>
+<valueDef value="Jul" description="July"/>
+<valueDef value="Jun" description="June"/>
+<valueDef value="Mar" description="March"/>
+<valueDef value="May" description="May"/>
+<valueDef value="Nov" description="November"/>
+<valueDef value="Oct" description="October"/>
+<valueDef value="Sep" description="September"/>
+</listOfValues>
+<ownDataTypeParameters>3 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="pt_ave_high" id="EE3BBC7F-8E77-BCF5-A2C0-E623CDEDA0A4">
+<createdBy>User</createdBy>
+<createdTime>2022-04-22 11:02:54 UTC</createdTime>
+<commentInRDBMS><![CDATA[Average high temperature at a given port]]></commentInRDBMS>
+<ownerDesignName>1B_logical_model</ownerDesignName>
+<engineerTo>
+<item key="E06BFC77-926B-847A-7389-12C60EDE8C51" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>2</dataTypePrecision>
+<ownDataTypeParameters>,2,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="pt_ave_low" id="99A5A999-C9E0-8AF1-24D2-E4E1C8235FDD">
+<createdBy>User</createdBy>
+<createdTime>2022-04-22 11:04:26 UTC</createdTime>
+<commentInRDBMS><![CDATA[Average low temperature at a given port]]></commentInRDBMS>
+<ownerDesignName>1B_logical_model</ownerDesignName>
+<engineerTo>
+<item key="E06BFC77-926B-847A-7389-12C60EDE8C51" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>2</dataTypePrecision>
+<ownDataTypeParameters>,2,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="D474F973-B170-01D5-90F0-64376F55A71D" name="PORT_TEMP PK">
+<createdBy>User</createdBy>
+<createdTime>2022-04-22 10:21:07 UTC</createdTime>
+<ownerDesignName>1B_logical_model</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="E06BFC77-926B-847A-7389-12C60EDE8C51" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>B586C049-D16F-4E4B-9198-4479B43034A4</attributeRef>
+<attributeRef>CD0C95B9-2837-EC77-5386-6E66EC560099</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

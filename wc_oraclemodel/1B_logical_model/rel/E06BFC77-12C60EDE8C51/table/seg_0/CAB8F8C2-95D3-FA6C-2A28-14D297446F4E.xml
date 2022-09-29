@@ -1,0 +1,102 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="CAB8F8C2-95D3-FA6C-2A28-14D297446F4E" name="COMM_LANG">
+<createdBy>User</createdBy>
+<createdTime>2022-04-27 16:17:24 UTC</createdTime>
+<generatorID>F50B9149-ECE9-A6DE-114E-CAEA2DC65F91</generatorID>
+<ownerDesignName>1B_logical_model</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="port_code" id="8DF887C2-0399-1E33-B9D3-EA49A1CC13F1">
+<createdBy>User</createdBy>
+<createdTime>2022-04-27 16:17:24 UTC</createdTime>
+<commentInRDBMS><![CDATA[Port code]]></commentInRDBMS>
+<generatorID>18704DAB-A297-BFE2-AF70-4E90883D03CA</generatorID>
+<ownerDesignName>1B_logical_model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>5 CHAR</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="E837BC8B-0BA5-A312-04ED-884F54831D6C" referredColumn="F25C546E-8A04-20F0-515F-3027EA455F57"/>
+</associations>
+</Column>
+<Column name="tour_no" id="27F76B8A-4DCD-5AE8-84B6-4BABB31F8468">
+<createdBy>User</createdBy>
+<createdTime>2022-04-27 16:17:24 UTC</createdTime>
+<commentInRDBMS><![CDATA[Tour number]]></commentInRDBMS>
+<generatorID>E8FB6421-996B-D77C-DA30-023CF2EA6DF8</generatorID>
+<ownerDesignName>1B_logical_model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>2 CHAR</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="E837BC8B-0BA5-A312-04ED-884F54831D6C" referredColumn="6217FA84-2DC6-951E-F5F5-DC453B7D2AB5"/>
+</associations>
+</Column>
+<Column name="lang_code" id="71FFF558-FB43-6BD6-F41E-081565CB8207">
+<createdBy>User</createdBy>
+<createdTime>2022-04-27 16:17:24 UTC</createdTime>
+<commentInRDBMS><![CDATA[Language represented using  ISO 3166-1 Alpha-2 codes]]></commentInRDBMS>
+<generatorID>1A14863C-AE43-A31F-4F40-736F99DF3ED9</generatorID>
+<ownerDesignName>1B_logical_model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>2</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="D13C1EA0-8C27-44D7-B6F2-AEB1E7ECA18E" referredColumn="BEE1CEFD-84EE-EFAC-65CD-BC663E5EE82E"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="A150A82B-6755-D102-4E89-4A7116D76715" name="COMM_LANG_PK">
+<createdBy>User</createdBy>
+<createdTime>2022-04-27 16:17:24 UTC</createdTime>
+<generatorID>EA28CC78-D44B-4672-2AD7-88A959577244</generatorID>
+<ownerDesignName>1B_logical_model</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="71FFF558-FB43-6BD6-F41E-081565CB8207"/>
+<colUsage columnID="8DF887C2-0399-1E33-B9D3-EA49A1CC13F1"/>
+<colUsage columnID="27F76B8A-4DCD-5AE8-84B6-4BABB31F8468"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="14C9CF0F-2E74-1586-0DC5-B49D0C996EF4" name="comm_lang_language">
+<createdBy>User</createdBy>
+<createdTime>2022-04-27 16:17:24 UTC</createdTime>
+<generatorID>9B5C98D1-72F6-D995-66BE-FDCC99DCE430</generatorID>
+<ownerDesignName>1B_logical_model</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="71FFF558-FB43-6BD6-F41E-081565CB8207"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="5139718F-CE51-6D35-12D4-7AA85D95B819" name="tour_comm_lang">
+<createdBy>User</createdBy>
+<createdTime>2022-04-27 16:17:24 UTC</createdTime>
+<generatorID>39A21F7A-C8BD-28C0-ACAB-C06E2FF8122E</generatorID>
+<ownerDesignName>1B_logical_model</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="8DF887C2-0399-1E33-B9D3-EA49A1CC13F1"/>
+<colUsage columnID="27F76B8A-4DCD-5AE8-84B6-4BABB31F8468"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

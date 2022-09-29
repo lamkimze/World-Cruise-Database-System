@@ -1,0 +1,22 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="tour_tour_availability" directorySegmentName="seg_0" id="C87A8517-AC3F-672B-A9E3-863B4DEBA589">
+<createdBy>Predator</createdBy>
+<createdTime>2022-04-26 12:13:37 UTC</createdTime>
+<ownerDesignName>1B_logical_model</ownerDesignName>
+<engineerTo>
+<item key="E06BFC77-926B-847A-7389-12C60EDE8C51" value="true"/>
+</engineerTo>
+<sourcePk>3DAA3CF0-C68D-58E3-C706-A79B7D8EE2EE</sourcePk>
+<targetPk>F16E1616-362E-BA3B-BE00-38245BD0AEF1</targetPk>
+<identifying>false</identifying>
+<nameOnSource> </nameOnSource>
+<nameOnTarget> indicates for</nameOnTarget>
+<optionalSource>false</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>*</sourceCardinality>
+<sourceEntity>82377213-AF7C-EF4F-3780-8C3E6B4DFACD</sourceEntity>
+<targetCardinalityString>1</targetCardinalityString>
+<targetEntity>48A1E87D-EF3B-ACC6-FC6E-9DE7E5731621</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

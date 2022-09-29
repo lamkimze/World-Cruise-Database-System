@@ -1,0 +1,63 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="D38D299C-68BD-F2F4-0B47-952EE6F586CF" name="LANGUAGE">
+<createdBy>Predator</createdBy>
+<createdTime>2022-04-25 05:31:49 UTC</createdTime>
+<ownerDesignName>1B_logical_model</ownerDesignName>
+<engineerTo>
+<item key="E06BFC77-926B-847A-7389-12C60EDE8C51" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="lang_code" id="E3039334-0B7A-F146-93DC-444AD1E945E5">
+<createdBy>Predator</createdBy>
+<createdTime>2022-04-25 06:00:25 UTC</createdTime>
+<commentInRDBMS><![CDATA[Language represented using  ISO 3166-1 Alpha-2 codes]]></commentInRDBMS>
+<ownerDesignName>1B_logical_model</ownerDesignName>
+<engineerTo>
+<item key="E06BFC77-926B-847A-7389-12C60EDE8C51" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>2</dataTypeSize>
+<ownDataTypeParameters>2,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="lang_name" id="2E1EFCE6-3096-BEBE-6A43-57F23D5CC909">
+<createdBy>Predator</createdBy>
+<createdTime>2022-04-25 05:52:58 UTC</createdTime>
+<commentInRDBMS><![CDATA[Languange full name]]></commentInRDBMS>
+<ownerDesignName>1B_logical_model</ownerDesignName>
+<engineerTo>
+<item key="E06BFC77-926B-847A-7389-12C60EDE8C51" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="7F6DDE30-DF49-4990-54CB-36EF64E34B3D" name="LANGUAGE PK">
+<createdBy>Predator</createdBy>
+<createdTime>2022-04-25 05:59:59 UTC</createdTime>
+<ownerDesignName>1B_logical_model</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="E06BFC77-926B-847A-7389-12C60EDE8C51" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<newElementsIDs>E3039334-0B7A-F146-93DC-444AD1E945E5</newElementsIDs>
+<usedAttributes>
+<attributeRef>E3039334-0B7A-F146-93DC-444AD1E945E5</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

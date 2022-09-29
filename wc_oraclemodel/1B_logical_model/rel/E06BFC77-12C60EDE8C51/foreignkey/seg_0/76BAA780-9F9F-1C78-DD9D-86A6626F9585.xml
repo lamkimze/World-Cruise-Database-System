@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="76BAA780-9F9F-1C78-DD9D-86A6626F9585" containerWithKeyObject="99DB8F8D-BA61-7F89-85FC-390D86A45129" localFKIndex="2A971583-3E44-9775-FC9C-0F58C65404D1" name="tour_tour_det">
+<createdBy>User</createdBy>
+<createdTime>2022-04-27 16:17:24 UTC</createdTime>
+<generatorID>8785E7A2-205B-7346-22BC-70688E1C3E52</generatorID>
+<ownerDesignName>1B_logical_model</ownerDesignName>
+<referredTableLongName>TOUR</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>18D17B5B-015D-F22A-CEC1-7656F373C737</referredTableID>
+<keyObject>76540769-6E27-18D2-DB08-BFB6222D4B53</keyObject>
+<referredKeyID>76540769-6E27-18D2-DB08-BFB6222D4B53</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>port_code,tour_no</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

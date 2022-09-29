@@ -1,0 +1,110 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="99DB8F8D-BA61-7F89-85FC-390D86A45129" name="TOUR_OFF">
+<createdBy>User</createdBy>
+<createdTime>2022-04-27 16:17:24 UTC</createdTime>
+<generatorID>AB7753DB-8D99-EB0E-00F7-B36D8806A6D3</generatorID>
+<ownerDesignName>1B_logical_model</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="tour_off_id" id="25FABDF6-C400-EEBD-0220-F2FE8899290B">
+<createdBy>User</createdBy>
+<createdTime>2022-04-27 16:17:24 UTC</createdTime>
+<commentInRDBMS><![CDATA[The ID for an offering of a tour]]></commentInRDBMS>
+<generatorID>E5C9264C-9CBD-4156-CD2D-7E4862F8E23A</generatorID>
+<ownerDesignName>1B_logical_model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<ownDataTypeParameters>,5,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="port_code" id="375433FF-5AF7-8DAB-0DC1-AD766B971D88">
+<createdBy>User</createdBy>
+<createdTime>2022-04-27 16:17:24 UTC</createdTime>
+<commentInRDBMS><![CDATA[Port code]]></commentInRDBMS>
+<generatorID>5475A452-006C-6B88-9FE2-3B207ADC47DB</generatorID>
+<ownerDesignName>1B_logical_model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>5 CHAR</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="76BAA780-9F9F-1C78-DD9D-86A6626F9585" referredColumn="F25C546E-8A04-20F0-515F-3027EA455F57"/>
+</associations>
+</Column>
+<Column name="tour_no" id="2A697EDF-C008-80FD-15DA-F90351857A69">
+<createdBy>User</createdBy>
+<createdTime>2022-04-27 16:17:24 UTC</createdTime>
+<commentInRDBMS><![CDATA[Tour number]]></commentInRDBMS>
+<generatorID>AC005C74-F297-7C99-8EF9-2C3F84FF8F4D</generatorID>
+<ownerDesignName>1B_logical_model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>2 CHAR</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="76BAA780-9F9F-1C78-DD9D-86A6626F9585" referredColumn="6217FA84-2DC6-951E-F5F5-DC453B7D2AB5"/>
+</associations>
+</Column>
+<Column name="tour_date" id="5DCEB0E7-3050-3D36-5F60-468C14E4B480">
+<createdBy>User</createdBy>
+<createdTime>2022-04-27 16:17:24 UTC</createdTime>
+<commentInRDBMS><![CDATA[Date of the tour]]></commentInRDBMS>
+<generatorID>5B86776E-4FD6-5158-8A44-B94B3B024712</generatorID>
+<ownerDesignName>1B_logical_model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="41D06AF3-E0DD-A590-DEB9-5DE50AEBDA5E" name="TOUR_OFF_PK">
+<createdBy>User</createdBy>
+<createdTime>2022-04-27 16:17:24 UTC</createdTime>
+<generatorID>E2AA3B84-98CD-68DC-F5E5-4C4C6D4E6DB2</generatorID>
+<ownerDesignName>1B_logical_model</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="25FABDF6-C400-EEBD-0220-F2FE8899290B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="38E43285-F25E-7742-5B1D-0BD5A28BD7E6" name="TOUR_OFF_NK">
+<createdBy>User</createdBy>
+<createdTime>2022-04-27 16:17:24 UTC</createdTime>
+<generatorID>02AD8CD4-81A8-7F02-613F-14DDE7C64BAD</generatorID>
+<ownerDesignName>1B_logical_model</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="375433FF-5AF7-8DAB-0DC1-AD766B971D88"/>
+<colUsage columnID="2A697EDF-C008-80FD-15DA-F90351857A69"/>
+<colUsage columnID="5DCEB0E7-3050-3D36-5F60-468C14E4B480"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="2A971583-3E44-9775-FC9C-0F58C65404D1" name="tour_tour_det">
+<createdBy>User</createdBy>
+<createdTime>2022-04-27 16:17:24 UTC</createdTime>
+<generatorID>8785E7A2-205B-7346-22BC-70688E1C3E52</generatorID>
+<ownerDesignName>1B_logical_model</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="375433FF-5AF7-8DAB-0DC1-AD766B971D88"/>
+<colUsage columnID="2A697EDF-C008-80FD-15DA-F90351857A69"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,189 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="83C7B6F0-4A80-F915-4A65-A6D2A6B2ABFA" name="PASSENGER">
+<createdBy>User</createdBy>
+<createdTime>2022-04-22 08:40:45 UTC</createdTime>
+<ownerDesignName>1B_logical_model</ownerDesignName>
+<engineerTo>
+<item key="E06BFC77-926B-847A-7389-12C60EDE8C51" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="pass_id" id="8BCAF9CC-F054-1AD0-7C96-BA020DC4842B">
+<createdBy>User</createdBy>
+<createdTime>2022-04-22 08:49:21 UTC</createdTime>
+<commentInRDBMS><![CDATA[Passenger ID]]></commentInRDBMS>
+<ownerDesignName>1B_logical_model</ownerDesignName>
+<engineerTo>
+<item key="E06BFC77-926B-847A-7389-12C60EDE8C51" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>8</dataTypePrecision>
+<ownDataTypeParameters>,8,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="pass_fname" id="2EFEE78E-9FCB-C8F3-3B26-CA891AC14363">
+<createdBy>User</createdBy>
+<createdTime>2022-04-22 08:49:37 UTC</createdTime>
+<commentInRDBMS><![CDATA[Passenger first name]]></commentInRDBMS>
+<ownerDesignName>1B_logical_model</ownerDesignName>
+<engineerTo>
+<item key="E06BFC77-926B-847A-7389-12C60EDE8C51" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50 CHAR</dataTypeSize>
+<ownDataTypeParameters>50 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="pass_lname" id="E5AC28D1-9C2F-F30C-38A0-E601729A7575">
+<createdBy>User</createdBy>
+<createdTime>2022-04-27 11:36:52 UTC</createdTime>
+<commentInRDBMS><![CDATA[Passenger last name]]></commentInRDBMS>
+<ownerDesignName>1B_logical_model</ownerDesignName>
+<engineerTo>
+<item key="E06BFC77-926B-847A-7389-12C60EDE8C51" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50 CHAR</dataTypeSize>
+<ownDataTypeParameters>50 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="pass_dob" id="2B09129B-64CA-FD53-1667-01734D2BA306">
+<createdBy>User</createdBy>
+<createdTime>2022-04-22 08:49:37 UTC</createdTime>
+<commentInRDBMS><![CDATA[Passenger date of birth]]></commentInRDBMS>
+<ownerDesignName>1B_logical_model</ownerDesignName>
+<engineerTo>
+<item key="E06BFC77-926B-847A-7389-12C60EDE8C51" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="pass_gender" id="7F50D511-61F7-C55B-F844-72C9B7B08A25">
+<createdBy>User</createdBy>
+<createdTime>2022-04-22 08:49:37 UTC</createdTime>
+<commentInRDBMS><![CDATA[Passenger gender]]></commentInRDBMS>
+<ownerDesignName>1B_logical_model</ownerDesignName>
+<engineerTo>
+<item key="E06BFC77-926B-847A-7389-12C60EDE8C51" value="true"/>
+</engineerTo>
+<constraintName>chk_gender</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>1 CHAR</dataTypeSize>
+<listOfValues>
+<valueDef value="F" description="Female"/>
+<valueDef value="M" description="Male"/>
+<valueDef value="O" description="Other"/>
+</listOfValues>
+<ownDataTypeParameters>1 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="pass_phone" id="4F252277-3B27-DA11-6738-3532986662F1">
+<createdBy>Predator</createdBy>
+<createdTime>2022-04-24 11:05:15 UTC</createdTime>
+<commentInRDBMS><![CDATA[Passenger phone number with conutry code]]></commentInRDBMS>
+<ownerDesignName>1B_logical_model</ownerDesignName>
+<engineerTo>
+<item key="E06BFC77-926B-847A-7389-12C60EDE8C51" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>15</dataTypeSize>
+<ownDataTypeParameters>15,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="pass_guard" id="5693361F-A62E-3C34-037F-15FFA37AA066">
+<createdBy>Predator</createdBy>
+<createdTime>2022-04-24 11:14:12 UTC</createdTime>
+<commentInRDBMS><![CDATA[Passenger ID]]></commentInRDBMS>
+<generatorID>DFBF6BA2-92DB-5349-AE83-B6AA95980B59</generatorID>
+<ownerDesignName>1B_logical_model</ownerDesignName>
+<engineerTo>
+<item key="E06BFC77-926B-847A-7389-12C60EDE8C51" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>8BCAF9CC-F054-1AD0-7C96-BA020DC4842B</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>8</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="pass_principal_lang" id="5556F4D1-E229-354D-12F1-45537E3CC86C">
+<createdBy>User</createdBy>
+<createdTime>2022-04-27 11:57:46 UTC</createdTime>
+<commentInRDBMS><![CDATA[Language represented using  ISO 3166-1 Alpha-2 codes]]></commentInRDBMS>
+<generatorID>3EE23B61-44F1-CB59-0EC8-017C87946C49</generatorID>
+<ownerDesignName>1B_logical_model</ownerDesignName>
+<engineerTo>
+<item key="E06BFC77-926B-847A-7389-12C60EDE8C51" value="true"/>
+</engineerTo>
+<referedAttribute>E3039334-0B7A-F146-93DC-444AD1E945E5</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>2</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="add_id" id="CC323086-7288-648B-323A-85F28C7B9CBC">
+<createdBy>Predator</createdBy>
+<createdTime>2022-04-24 11:41:56 UTC</createdTime>
+<commentInRDBMS><![CDATA[A unique address ID as a surrogate key for the passenger's address]]></commentInRDBMS>
+<generatorID>5DE4F1E5-C62E-7D4B-EB1A-F08642173605</generatorID>
+<ownerDesignName>1B_logical_model</ownerDesignName>
+<engineerTo>
+<item key="E06BFC77-926B-847A-7389-12C60EDE8C51" value="true"/>
+</engineerTo>
+<referedAttribute>3A602AF0-1191-6599-4CFA-5BA64AF5A537</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>8</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="cruise_id" id="7E134CE0-C63D-537C-B856-42F57A2E1CAD">
+<createdBy>Predator</createdBy>
+<createdTime>2022-04-26 12:52:26 UTC</createdTime>
+<commentInRDBMS><![CDATA[ID of the cruise]]></commentInRDBMS>
+<generatorID>515C4987-282B-FB69-E770-C78843C7CFAB</generatorID>
+<ownerDesignName>1B_logical_model</ownerDesignName>
+<engineerTo>
+<item key="E06BFC77-926B-847A-7389-12C60EDE8C51" value="true"/>
+</engineerTo>
+<referedAttribute>B09DF5C0-6B97-2D73-9B59-087478FE94CB</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="A08D4440-3AE6-31C7-14A4-0120FBC3FEA9" name="PASSENGER PK">
+<createdBy>User</createdBy>
+<createdTime>2022-04-22 08:49:31 UTC</createdTime>
+<ownerDesignName>1B_logical_model</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="E06BFC77-926B-847A-7389-12C60EDE8C51" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>8BCAF9CC-F054-1AD0-7C96-BA020DC4842B</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

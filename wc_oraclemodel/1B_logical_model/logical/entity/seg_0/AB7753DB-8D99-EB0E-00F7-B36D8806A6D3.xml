@@ -1,0 +1,109 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="AB7753DB-8D99-EB0E-00F7-B36D8806A6D3" name="TOUR_OFF">
+<createdBy>User</createdBy>
+<createdTime>2022-04-27 10:45:38 UTC</createdTime>
+<ownerDesignName>1B_logical_model</ownerDesignName>
+<engineerTo>
+<item key="E06BFC77-926B-847A-7389-12C60EDE8C51" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="tour_off_id" id="E5C9264C-9CBD-4156-CD2D-7E4862F8E23A">
+<createdBy>User</createdBy>
+<createdTime>2022-04-27 10:53:23 UTC</createdTime>
+<commentInRDBMS><![CDATA[The ID for an offering of a tour]]></commentInRDBMS>
+<ownerDesignName>1B_logical_model</ownerDesignName>
+<engineerTo>
+<item key="E06BFC77-926B-847A-7389-12C60EDE8C51" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<ownDataTypeParameters>,5,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="port_code" id="5475A452-006C-6B88-9FE2-3B207ADC47DB">
+<createdBy>User</createdBy>
+<createdTime>2022-04-27 10:50:33 UTC</createdTime>
+<commentInRDBMS><![CDATA[Port code]]></commentInRDBMS>
+<generatorID>8785E7A2-205B-7346-22BC-70688E1C3E52</generatorID>
+<ownerDesignName>1B_logical_model</ownerDesignName>
+<engineerTo>
+<item key="E06BFC77-926B-847A-7389-12C60EDE8C51" value="true"/>
+</engineerTo>
+<referedAttribute>27D4C19E-2223-2940-5185-C1A267D83AF7</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>5 CHAR</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="tour_no" id="AC005C74-F297-7C99-8EF9-2C3F84FF8F4D">
+<createdBy>User</createdBy>
+<createdTime>2022-04-27 10:50:33 UTC</createdTime>
+<commentInRDBMS><![CDATA[Tour number]]></commentInRDBMS>
+<generatorID>8785E7A2-205B-7346-22BC-70688E1C3E52</generatorID>
+<ownerDesignName>1B_logical_model</ownerDesignName>
+<engineerTo>
+<item key="E06BFC77-926B-847A-7389-12C60EDE8C51" value="true"/>
+</engineerTo>
+<referedAttribute>8A2FC029-B192-CEEE-476D-C4EAAA6930E9</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>2 CHAR</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="tour_date" id="5B86776E-4FD6-5158-8A44-B94B3B024712">
+<createdBy>User</createdBy>
+<createdTime>2022-04-27 10:51:04 UTC</createdTime>
+<commentInRDBMS><![CDATA[Date of the tour]]></commentInRDBMS>
+<ownerDesignName>1B_logical_model</ownerDesignName>
+<engineerTo>
+<item key="E06BFC77-926B-847A-7389-12C60EDE8C51" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="E2AA3B84-98CD-68DC-F5E5-4C4C6D4E6DB2" name="TOUR_OFF PK">
+<createdBy>User</createdBy>
+<createdTime>2022-04-27 10:46:50 UTC</createdTime>
+<ownerDesignName>1B_logical_model</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="E06BFC77-926B-847A-7389-12C60EDE8C51" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<newElementsIDs>E5C9264C-9CBD-4156-CD2D-7E4862F8E23A</newElementsIDs>
+<usedAttributes>
+<attributeRef>E5C9264C-9CBD-4156-CD2D-7E4862F8E23A</attributeRef>
+</usedAttributes>
+</identifier>
+<identifier id="02AD8CD4-81A8-7F02-613F-14DDE7C64BAD" name="TOUR_OFF_NK">
+<createdBy>User</createdBy>
+<createdTime>2022-04-27 10:55:02 UTC</createdTime>
+<ownerDesignName>1B_logical_model</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="E06BFC77-926B-847A-7389-12C60EDE8C51" value="false"/>
+</engineerTo>
+<newElementsIDs>5475A452-006C-6B88-9FE2-3B207ADC47DB,AC005C74-F297-7C99-8EF9-2C3F84FF8F4D,5B86776E-4FD6-5158-8A44-B94B3B024712</newElementsIDs>
+<usedAttributes>
+<attributeRef>5475A452-006C-6B88-9FE2-3B207ADC47DB</attributeRef>
+<attributeRef>AC005C74-F297-7C99-8EF9-2C3F84FF8F4D</attributeRef>
+<attributeRef>5B86776E-4FD6-5158-8A44-B94B3B024712</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

@@ -1,0 +1,223 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="531F27BB-1737-01C6-5E8C-19F349DF59A6" name="PASSENGER">
+<createdBy>User</createdBy>
+<createdTime>2022-04-27 16:17:24 UTC</createdTime>
+<generatorID>83C7B6F0-4A80-F915-4A65-A6D2A6B2ABFA</generatorID>
+<ownerDesignName>1B_logical_model</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="pass_id" id="FF4AC198-A92C-A95E-2579-D85DA2D8B1AE">
+<createdBy>User</createdBy>
+<createdTime>2022-04-27 16:17:24 UTC</createdTime>
+<commentInRDBMS><![CDATA[Passenger ID]]></commentInRDBMS>
+<generatorID>8BCAF9CC-F054-1AD0-7C96-BA020DC4842B</generatorID>
+<ownerDesignName>1B_logical_model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>8</dataTypePrecision>
+<ownDataTypeParameters>,8,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="pass_fname" id="EF19E035-B6A3-16C8-6829-D4D9DBC278F3">
+<createdBy>User</createdBy>
+<createdTime>2022-04-27 16:17:24 UTC</createdTime>
+<commentInRDBMS><![CDATA[Passenger first name]]></commentInRDBMS>
+<generatorID>2EFEE78E-9FCB-C8F3-3B26-CA891AC14363</generatorID>
+<ownerDesignName>1B_logical_model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50 CHAR</dataTypeSize>
+<ownDataTypeParameters>50 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="pass_lname" id="A861DA90-181A-FCC5-13F3-8FE1BC2FD4D0">
+<createdBy>User</createdBy>
+<createdTime>2022-04-27 16:17:24 UTC</createdTime>
+<commentInRDBMS><![CDATA[Passenger last name]]></commentInRDBMS>
+<generatorID>E5AC28D1-9C2F-F30C-38A0-E601729A7575</generatorID>
+<ownerDesignName>1B_logical_model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50 CHAR</dataTypeSize>
+<ownDataTypeParameters>50 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="pass_dob" id="1FF725F2-F2A6-8293-D10E-05D3ABF4DCA8">
+<createdBy>User</createdBy>
+<createdTime>2022-04-27 16:17:24 UTC</createdTime>
+<commentInRDBMS><![CDATA[Passenger date of birth]]></commentInRDBMS>
+<generatorID>2B09129B-64CA-FD53-1667-01734D2BA306</generatorID>
+<ownerDesignName>1B_logical_model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="pass_gender" id="2816AF2B-0628-D013-1A4E-79671BE079F5">
+<createdBy>User</createdBy>
+<createdTime>2022-04-27 16:17:24 UTC</createdTime>
+<commentInRDBMS><![CDATA[Passenger gender]]></commentInRDBMS>
+<generatorID>7F50D511-61F7-C55B-F844-72C9B7B08A25</generatorID>
+<ownerDesignName>1B_logical_model</ownerDesignName>
+<constraintName>chk_gender</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>1 CHAR</dataTypeSize>
+<listOfValues>
+<valueDef value="F" description="Female"/>
+<valueDef value="M" description="Male"/>
+<valueDef value="O" description="Other"/>
+</listOfValues>
+<ownDataTypeParameters>1 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="pass_phone" id="888340C7-F32F-FFA4-F051-19FDE9C75AF3">
+<createdBy>User</createdBy>
+<createdTime>2022-04-27 16:17:24 UTC</createdTime>
+<commentInRDBMS><![CDATA[Passenger phone number with conutry code]]></commentInRDBMS>
+<generatorID>4F252277-3B27-DA11-6738-3532986662F1</generatorID>
+<ownerDesignName>1B_logical_model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>15</dataTypeSize>
+<ownDataTypeParameters>15,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="pass_guard" id="D04EECD0-5CCF-9F88-0C44-619271AC0D17">
+<createdBy>User</createdBy>
+<createdTime>2022-04-27 16:17:24 UTC</createdTime>
+<commentInRDBMS><![CDATA[Passenger ID]]></commentInRDBMS>
+<generatorID>5693361F-A62E-3C34-037F-15FFA37AA066</generatorID>
+<ownerDesignName>1B_logical_model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>8</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="224313F8-0ED0-3974-E3C8-55E9166CA1DA" referredColumn="FF4AC198-A92C-A95E-2579-D85DA2D8B1AE"/>
+</associations>
+</Column>
+<Column name="pass_principal_lang" id="2FB09F0C-587F-99F7-D91E-28E0479B4478">
+<createdBy>User</createdBy>
+<createdTime>2022-04-27 16:17:24 UTC</createdTime>
+<commentInRDBMS><![CDATA[Language represented using  ISO 3166-1 Alpha-2 codes]]></commentInRDBMS>
+<generatorID>5556F4D1-E229-354D-12F1-45537E3CC86C</generatorID>
+<ownerDesignName>1B_logical_model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>2</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="A0FB70F2-DC9E-0307-E0C9-7BC3E3B03533" referredColumn="BEE1CEFD-84EE-EFAC-65CD-BC663E5EE82E"/>
+</associations>
+</Column>
+<Column name="add_id" id="A0F5AA41-75D5-133F-A2F7-6B138E1A1785">
+<createdBy>User</createdBy>
+<createdTime>2022-04-27 16:17:24 UTC</createdTime>
+<commentInRDBMS><![CDATA[A unique address ID as a surrogate key for the passenger's address]]></commentInRDBMS>
+<generatorID>CC323086-7288-648B-323A-85F28C7B9CBC</generatorID>
+<ownerDesignName>1B_logical_model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>8</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="F772B9EB-FB00-21BC-0B2D-FF54FC9B0E38" referredColumn="850DE940-4657-34C1-28E4-EBCD0645FA5A"/>
+</associations>
+</Column>
+<Column name="cruise_id" id="A3D08DD6-B08E-4AC8-958C-D48A6AEE9831">
+<createdBy>User</createdBy>
+<createdTime>2022-04-27 16:17:24 UTC</createdTime>
+<commentInRDBMS><![CDATA[ID of the cruise]]></commentInRDBMS>
+<generatorID>7E134CE0-C63D-537C-B856-42F57A2E1CAD</generatorID>
+<ownerDesignName>1B_logical_model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="C319CCCA-B98B-D074-D88E-1DA13A30B168" referredColumn="78F1D538-9A9D-CC2F-A29B-5614E4946939"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="5CF95BE1-170D-639B-6C0A-67A5118514F9" name="PASSENGER_PK">
+<createdBy>User</createdBy>
+<createdTime>2022-04-27 16:17:24 UTC</createdTime>
+<generatorID>A08D4440-3AE6-31C7-14A4-0120FBC3FEA9</generatorID>
+<ownerDesignName>1B_logical_model</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="FF4AC198-A92C-A95E-2579-D85DA2D8B1AE"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="D71D5EE8-37B0-2CCF-05D0-15054798F7FC" name="child_guardian">
+<createdBy>User</createdBy>
+<createdTime>2022-04-27 16:17:24 UTC</createdTime>
+<generatorID>DFBF6BA2-92DB-5349-AE83-B6AA95980B59</generatorID>
+<ownerDesignName>1B_logical_model</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D04EECD0-5CCF-9F88-0C44-619271AC0D17"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="017F4C33-A0F4-4128-9A9F-285EBBF034DC" name="cruise_passenger">
+<createdBy>User</createdBy>
+<createdTime>2022-04-27 16:17:24 UTC</createdTime>
+<generatorID>515C4987-282B-FB69-E770-C78843C7CFAB</generatorID>
+<ownerDesignName>1B_logical_model</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A3D08DD6-B08E-4AC8-958C-D48A6AEE9831"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="F295E8CA-489A-CF16-242D-353B288CB2E7" name="pass_lang">
+<createdBy>User</createdBy>
+<createdTime>2022-04-27 16:17:24 UTC</createdTime>
+<generatorID>3EE23B61-44F1-CB59-0EC8-017C87946C49</generatorID>
+<ownerDesignName>1B_logical_model</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="2FB09F0C-587F-99F7-D91E-28E0479B4478"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="4C145780-46A5-A101-DF22-C786D3103D0B" name="passenger_address">
+<createdBy>User</createdBy>
+<createdTime>2022-04-27 16:17:24 UTC</createdTime>
+<generatorID>5DE4F1E5-C62E-7D4B-EB1A-F08642173605</generatorID>
+<ownerDesignName>1B_logical_model</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A0F5AA41-75D5-133F-A2F7-6B138E1A1785"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

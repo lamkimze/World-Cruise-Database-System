@@ -1,0 +1,120 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="8E73121B-DC7D-344C-924F-334AD6C69855" name="ADDRESS">
+<createdBy>User</createdBy>
+<createdTime>2022-04-22 08:40:47 UTC</createdTime>
+<ownerDesignName>1B_logical_model</ownerDesignName>
+<engineerTo>
+<item key="E06BFC77-926B-847A-7389-12C60EDE8C51" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="add_id" id="3A602AF0-1191-6599-4CFA-5BA64AF5A537">
+<createdBy>Predator</createdBy>
+<createdTime>2022-04-24 11:40:21 UTC</createdTime>
+<commentInRDBMS><![CDATA[A unique address ID as a surrogate key for the passenger's address]]></commentInRDBMS>
+<ownerDesignName>1B_logical_model</ownerDesignName>
+<engineerTo>
+<item key="E06BFC77-926B-847A-7389-12C60EDE8C51" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>8</dataTypePrecision>
+<ownDataTypeParameters>,8,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="add_street" id="938786CB-3935-2687-ED58-55E5077A5EE4">
+<createdBy>User</createdBy>
+<createdTime>2022-04-22 08:45:02 UTC</createdTime>
+<commentInRDBMS><![CDATA[Address street]]></commentInRDBMS>
+<ownerDesignName>1B_logical_model</ownerDesignName>
+<engineerTo>
+<item key="E06BFC77-926B-847A-7389-12C60EDE8C51" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50 CHAR</dataTypeSize>
+<ownDataTypeParameters>50 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="add_suburb" id="915F5D52-62FE-6310-E349-14012B1CE37F">
+<createdBy>User</createdBy>
+<createdTime>2022-04-22 08:45:03 UTC</createdTime>
+<commentInRDBMS><![CDATA[Address suburb]]></commentInRDBMS>
+<ownerDesignName>1B_logical_model</ownerDesignName>
+<engineerTo>
+<item key="E06BFC77-926B-847A-7389-12C60EDE8C51" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50 CHAR</dataTypeSize>
+<ownDataTypeParameters>50 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="add_postcode" id="36F8129D-53D8-50E4-9929-3996D0C61D64">
+<createdBy>User</createdBy>
+<createdTime>2022-04-22 08:45:03 UTC</createdTime>
+<commentInRDBMS><![CDATA[Address postcode]]></commentInRDBMS>
+<ownerDesignName>1B_logical_model</ownerDesignName>
+<engineerTo>
+<item key="E06BFC77-926B-847A-7389-12C60EDE8C51" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>4 CHAR</dataTypeSize>
+<ownDataTypeParameters>4 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="add_country" id="C26F575F-F144-1744-8F29-0564F4B38741">
+<createdBy>User</createdBy>
+<createdTime>2022-04-22 08:46:48 UTC</createdTime>
+<commentInRDBMS><![CDATA[Address country]]></commentInRDBMS>
+<ownerDesignName>1B_logical_model</ownerDesignName>
+<engineerTo>
+<item key="E06BFC77-926B-847A-7389-12C60EDE8C51" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50 CHAR</dataTypeSize>
+<ownDataTypeParameters>50 CHAR,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="3008B65D-BC51-CD4E-31C9-F1CC034BD5E4" name="ADDRESS PK">
+<createdBy>User</createdBy>
+<createdTime>2022-04-22 08:46:10 UTC</createdTime>
+<ownerDesignName>1B_logical_model</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="E06BFC77-926B-847A-7389-12C60EDE8C51" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>3A602AF0-1191-6599-4CFA-5BA64AF5A537</attributeRef>
+</usedAttributes>
+</identifier>
+<identifier id="96EE6C3A-B6C9-0544-B7E5-2EF6E455E094" name="ADDRESS_NK">
+<createdBy>Predator</createdBy>
+<createdTime>2022-04-24 11:46:04 UTC</createdTime>
+<ownerDesignName>1B_logical_model</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="E06BFC77-926B-847A-7389-12C60EDE8C51" value="false"/>
+</engineerTo>
+<newElementsIDs>938786CB-3935-2687-ED58-55E5077A5EE4,915F5D52-62FE-6310-E349-14012B1CE37F,36F8129D-53D8-50E4-9929-3996D0C61D64,C26F575F-F144-1744-8F29-0564F4B38741</newElementsIDs>
+<usedAttributes>
+<attributeRef>938786CB-3935-2687-ED58-55E5077A5EE4</attributeRef>
+<attributeRef>915F5D52-62FE-6310-E349-14012B1CE37F</attributeRef>
+<attributeRef>36F8129D-53D8-50E4-9929-3996D0C61D64</attributeRef>
+<attributeRef>C26F575F-F144-1744-8F29-0564F4B38741</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

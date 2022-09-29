@@ -1,0 +1,87 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="77ED3F75-A87F-A7D2-85FB-C69BE85163BC" name="TOUR_PART">
+<createdBy>User</createdBy>
+<createdTime>2022-04-22 10:23:46 UTC</createdTime>
+<ownerDesignName>1B_logical_model</ownerDesignName>
+<engineerTo>
+<item key="E06BFC77-926B-847A-7389-12C60EDE8C51" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="tour_off_id" id="1E1E71D8-D9D7-862A-2D53-C70F9D01AE69">
+<createdBy>User</createdBy>
+<createdTime>2022-04-27 10:53:48 UTC</createdTime>
+<commentInRDBMS><![CDATA[The ID for an offering of a tour]]></commentInRDBMS>
+<generatorID>E9E69598-F6C2-6F6B-0F64-B998E2D9FEBC</generatorID>
+<ownerDesignName>1B_logical_model</ownerDesignName>
+<engineerTo>
+<item key="E06BFC77-926B-847A-7389-12C60EDE8C51" value="true"/>
+</engineerTo>
+<referedAttribute>E5C9264C-9CBD-4156-CD2D-7E4862F8E23A</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="pass_id" id="79657C57-7265-1719-92F1-679B13A0D102">
+<createdBy>Predator</createdBy>
+<createdTime>2022-04-25 11:28:24 UTC</createdTime>
+<commentInRDBMS><![CDATA[Passenger ID]]></commentInRDBMS>
+<generatorID>129E0EFD-FE42-E578-300F-F4CADA1FCE9C</generatorID>
+<ownerDesignName>1B_logical_model</ownerDesignName>
+<engineerTo>
+<item key="E06BFC77-926B-847A-7389-12C60EDE8C51" value="true"/>
+</engineerTo>
+<referedAttribute>8BCAF9CC-F054-1AD0-7C96-BA020DC4842B</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>8</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="tour_part_pay_received" id="334ED8EE-B4B5-4660-8CEE-437B0DC8EBF3">
+<createdBy>User</createdBy>
+<createdTime>2022-04-22 10:34:08 UTC</createdTime>
+<commentInRDBMS><![CDATA[Payment received boolean]]></commentInRDBMS>
+<ownerDesignName>1B_logical_model</ownerDesignName>
+<engineerTo>
+<item key="E06BFC77-926B-847A-7389-12C60EDE8C51" value="true"/>
+</engineerTo>
+<constraintName>chk_payment</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>1 CHAR</dataTypeSize>
+<listOfValues>
+<valueDef value="F" description="False (yet to be received)"/>
+<valueDef value="T" description="True (received)"/>
+</listOfValues>
+<ownDataTypeParameters>1 CHAR,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="F8258F94-E459-F8C0-E4BD-5887D38C21AB" name="TOUR_PART PK">
+<createdBy>User</createdBy>
+<createdTime>2022-04-22 10:25:34 UTC</createdTime>
+<ownerDesignName>1B_logical_model</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="E06BFC77-926B-847A-7389-12C60EDE8C51" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<newElementsIDs>129E0EFD-FE42-E578-300F-F4CADA1FCE9C,E9E69598-F6C2-6F6B-0F64-B998E2D9FEBC</newElementsIDs>
+<usedAttributes>
+<attributeRef>79657C57-7265-1719-92F1-679B13A0D102</attributeRef>
+<attributeRef>1E1E71D8-D9D7-862A-2D53-C70F9D01AE69</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>
